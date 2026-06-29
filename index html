@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music 2018</title>
+
+<style>
+body {
+  background:#121212;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+}
+
+h1 {
+  color:#1db954;
+}
+
+.song {
+  margin:15px;
+  padding:10px;
+  background:#1e1e1e;
+  border-radius:10px;
+}
+
+button {
+  background:#1db954;
+  border:none;
+  padding:10px 20px;
+  color:white;
+  border-radius:20px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔥 ТОП 2018 🔥</h1>
+
+<div class="song">
+<p>MORGENSHTERN - Cadillac</p>
+<button onclick="play('https://www.youtube.com/embed/9uJ8F6nqgNQ')">Play</button>
+</div>
+
+<div class="song">
+<p>Nurminksy - Валим</p>
+<button onclick="play('https://www.youtube.com/embed/1xJ5gJ2z2k0')">Play</button>
+</div>
+
+<div class="song">
+<p>Slava Marlow - Ты горишь как огонь</p>
+<button onclick="play('https://www.youtube.com/embed/4f7nS3kF6pU')">Play</button>
+</div>
+
+<iframe id="player" width="90%" height="200" frameborder="0" allowfullscreen></iframe>
+
+<script>
+function play(url){
+  document.getElementById("player").src = url;
+}
+</script>
+
+</body>
+</html>
